@@ -1,0 +1,119 @@
+body{
+    position: relative;
+    background-image: url("../images/background.gif")!important;
+}
+
+/*--------padding----------*/
+.c-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+.c-padded-tb-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+.c-padded-tb-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.c-padded-tb {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.c-padded-tb-large {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.c-padded-tb-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.c-padded-tb-huge {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.c-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+.c-padded-mini {
+    padding: 0.2em!important;
+}
+.c-padded-small {
+    padding: 0.3em!important;
+}
+
+/*---------margin----------*/
+.c-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+.c-margin-tb-small {
+    margin-top: 0.5em !important;
+}
+.c-margin-top {
+    margin-top: 1em !important;
+}
+.c-margin-top-large {
+    margin-top: 2em !important;
+}
+
+/*---------text----------*/
+.c-text-thin {
+    font-weight: 300 !important;
+}
+.c-text-spaced {
+    letter-spacing: 1px !important;
+}
+.-c-text-lined {
+    line-height: 1.8 !important;
+}
+.c-text {
+    font-weight: 400 !important;
+    letter-spacing: 0.1em !important;
+    line-height: 1.5;
+}
+
+/*---------color-----------*/
+.c-opacity-mini {
+    opacity: 0.8 !important;
+}
+.c-opacity-tiny {
+    opacity: 0.6 !important;
+}
+
+/*---------color-----------*/
+.c-black {
+    color: #333;
+}
+
+/*---------display-----------*/
+.c-inline-block {
+    display: inline-block !important;
+}
+
+/*---------position------------*/
+.c-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*---------container----------*/
+.c-container {
+    margin: auto;
+}
+
+.c-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .c-mobile-hide {
+        display: none !important;
+    }
+    .c-mobile-show {
+        display: block !important;
+    }
+}
+
