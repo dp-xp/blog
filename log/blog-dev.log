@@ -1,0 +1,294 @@
+2020-04-23 09:53:17.929  INFO 13668 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 13668 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 09:53:17.982 DEBUG 13668 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 09:53:17.983  INFO 13668 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 09:53:19.180  WARN 13668 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 09:53:19.854  INFO 13668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 09:53:19.878  INFO 13668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 09:53:19.878  INFO 13668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 09:53:20.012  INFO 13668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 09:53:20.013  INFO 13668 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1916 ms
+2020-04-23 09:53:20.486  INFO 13668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 09:53:20.634  INFO 13668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 09:53:20.989  INFO 13668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 09:53:20.997  INFO 13668 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.594 seconds (JVM running for 6.732)
+2020-04-23 09:53:38.480  INFO 13668 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 09:53:38.481  INFO 13668 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 09:53:38.488  INFO 13668 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-23 10:04:39.750  INFO 13668 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:04:45.668  INFO 20084 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 20084 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:04:45.672 DEBUG 20084 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:04:45.672  INFO 20084 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:04:46.739  WARN 20084 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:04:47.004  WARN 20084 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+2020-04-23 10:04:47.013  INFO 20084 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-23 10:04:47.059 ERROR 20084 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at fun.lanxing.blog.BlogApplication.main(BlogApplication.java:11) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 15 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.<clinit>(AspectJExpressionPointcut.java:91) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:210) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:192) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:126) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.tools.PointcutPrimitive
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_101]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_101]
+	... 47 common frames omitted
+
+2020-04-23 10:05:23.469  INFO 9460 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 9460 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:05:23.473 DEBUG 9460 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:05:23.474  INFO 9460 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:05:24.536  WARN 9460 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:05:25.050  INFO 9460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 10:05:25.073  INFO 9460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 10:05:25.074  INFO 9460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 10:05:25.276  INFO 9460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 10:05:25.276  INFO 9460 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1746 ms
+2020-04-23 10:05:25.553  INFO 9460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:05:25.624  INFO 9460 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 10:05:25.936  INFO 9460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 10:05:25.941  INFO 9460 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.03 seconds (JVM running for 3.968)
+2020-04-23 10:05:30.854  INFO 9460 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:05:30.855  INFO 9460 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:05:30.864  INFO 9460 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-04-23 10:08:06.779  INFO 9188 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 9188 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:08:06.782 DEBUG 9188 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:08:06.782  INFO 9188 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:08:08.007  WARN 9188 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:08:08.195  WARN 9188 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+2020-04-23 10:08:08.203  INFO 9188 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-23 10:08:08.212 ERROR 9188 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at fun.lanxing.blog.BlogApplication.main(BlogApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 15 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.<clinit>(AspectJExpressionPointcut.java:91) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:210) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:192) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:126) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.tools.PointcutPrimitive
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_101]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_101]
+	... 47 common frames omitted
+
+2020-04-23 10:13:55.539  INFO 12476 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 12476 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:13:55.541 DEBUG 12476 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:13:55.542  INFO 12476 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:13:56.508  WARN 12476 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:13:56.915  INFO 12476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 10:13:56.934  INFO 12476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 10:13:56.934  INFO 12476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 10:13:57.095  INFO 12476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 10:13:57.096  INFO 12476 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1503 ms
+2020-04-23 10:13:57.316  INFO 12476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:13:57.374  INFO 12476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 10:13:57.658  INFO 12476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 10:13:57.661  INFO 12476 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 2.619 seconds (JVM running for 3.92)
+2020-04-23 10:14:03.611  INFO 12476 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:14:03.612  INFO 12476 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:14:03.621  INFO 12476 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-04-23 10:20:15.723  INFO 20704 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 20704 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:20:15.728 DEBUG 20704 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:20:15.728  INFO 20704 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:20:16.709  WARN 20704 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:20:17.217  INFO 20704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 10:20:17.241  INFO 20704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 10:20:17.241  INFO 20704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 10:20:17.370  INFO 20704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 10:20:17.370  INFO 20704 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1562 ms
+2020-04-23 10:20:17.632  INFO 20704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:20:17.736  INFO 20704 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 10:20:18.281  INFO 20704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 10:20:18.285  INFO 20704 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.273 seconds (JVM running for 4.605)
+2020-04-23 10:20:34.286  INFO 20704 --- [http-nio-8877-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:20:34.287  INFO 20704 --- [http-nio-8877-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:20:34.294  INFO 20704 --- [http-nio-8877-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-23 10:25:27.945  INFO 20704 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:25:33.762  INFO 23408 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 23408 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:25:33.771 DEBUG 23408 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:25:33.777  INFO 23408 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:25:34.758  WARN 23408 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:25:35.165  INFO 23408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 10:25:35.182  INFO 23408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 10:25:35.182  INFO 23408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 10:25:35.324  INFO 23408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 10:25:35.325  INFO 23408 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1467 ms
+2020-04-23 10:25:35.517  INFO 23408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:25:35.569  INFO 23408 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 10:25:35.840  INFO 23408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 10:25:35.848  INFO 23408 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 2.612 seconds (JVM running for 3.867)
+2020-04-23 10:25:42.592  INFO 23408 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:25:42.593  INFO 23408 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:25:42.604  INFO 23408 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-04-23 10:36:13.473  INFO 6896 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 6896 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 10:36:13.476 DEBUG 6896 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 10:36:13.477  INFO 6896 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 10:36:14.431  WARN 6896 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 10:36:14.923  INFO 6896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 10:36:14.971  INFO 6896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 10:36:14.972  INFO 6896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 10:36:15.148  INFO 6896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 10:36:15.149  INFO 6896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1608 ms
+2020-04-23 10:36:15.332  INFO 6896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 10:36:15.397  INFO 6896 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 10:36:15.679  INFO 6896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 10:36:15.682  INFO 6896 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 2.793 seconds (JVM running for 3.835)
+2020-04-23 10:36:45.743  INFO 6896 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 10:36:45.744  INFO 6896 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 10:36:45.752  INFO 6896 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-04-23 11:01:07.790  INFO 15800 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 15800 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 11:01:07.793 DEBUG 15800 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 11:01:07.793  INFO 15800 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 11:01:09.011  WARN 15800 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 11:01:09.509  INFO 15800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 11:01:09.529  INFO 15800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 11:01:09.530  INFO 15800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 11:01:09.684  INFO 15800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 11:01:09.685  INFO 15800 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1840 ms
+2020-04-23 11:01:09.969  INFO 15800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 11:01:10.037  INFO 15800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 11:01:10.323  INFO 15800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 11:01:10.326  INFO 15800 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.088 seconds (JVM running for 4.571)
+2020-04-23 11:01:17.383  INFO 15800 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 11:01:17.384  INFO 15800 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 11:01:17.396  INFO 15800 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-04-23 11:03:50.816  INFO 18296 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 18296 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 11:03:50.820 DEBUG 18296 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 11:03:50.820  INFO 18296 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 11:03:52.341  WARN 18296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 11:03:52.958  INFO 18296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 11:03:52.993  INFO 18296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 11:03:52.993  INFO 18296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 11:03:53.225  INFO 18296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 11:03:53.225  INFO 18296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2316 ms
+2020-04-23 11:03:53.525  INFO 18296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 11:03:53.600  INFO 18296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 11:03:54.042  INFO 18296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 11:03:54.048  INFO 18296 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.955 seconds (JVM running for 5.722)
+2020-04-23 11:03:58.784  INFO 18296 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 11:03:58.785  INFO 18296 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 11:03:58.791  INFO 18296 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-04-23 12:54:51.041  INFO 5532 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 5532 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 12:54:51.044 DEBUG 5532 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2020-04-23 12:54:51.044  INFO 5532 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 12:54:51.999  WARN 5532 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 12:54:52.423  INFO 5532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 12:54:52.441  INFO 5532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 12:54:52.442  INFO 5532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-23 12:54:52.555  INFO 5532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 12:54:52.555  INFO 5532 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1456 ms
+2020-04-23 12:54:52.774  INFO 5532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 12:54:52.851  INFO 5532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 12:54:53.162  INFO 5532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 12:54:53.167  INFO 5532 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 2.74 seconds (JVM running for 3.72)
+2020-04-23 12:55:08.000  INFO 5532 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 12:55:08.001  INFO 5532 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 12:55:08.009  INFO 5532 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms

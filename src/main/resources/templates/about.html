@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>关于我</title>
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+<!--导航-->
+<nav class="ui inverted attached segment c-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui blue header item">BuleStar Blog</h2>
+            <a href="#" class="c-item item c-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href="#" class="c-item item c-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="c-item item c-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href="#" class="c-item item c-mobile-hide"><i class="mini clone icon"></i>归档</a>
+            <a href="#" class="active c-item item c-mobile-hide"><i class="mini info icon"></i>关于我</a>
+            <div class="c-item item c-margin-left-large c-mobile-hide" style="margin-left: 120px">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+            <div class="c-item right center aligned item ui inverted stackable vertical segment c-mobile-hide">
+                <a href="#" class="item">登录</a>|
+                <a href="#" class="item">注册</a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button c-top-right c-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="c-container c-padded-tb-big">
+    <div class="ui container">
+        <div class="ui mobile stackable grid">
+            <!--左边图片部分-->
+            <div class="eleven wide column">
+                <div class="ui segment">
+                    <img src="../static/images/me.jpg" alt="" class="ui rounded image" style="width: 800px">
+                </div>
+            </div>
+            <!--右边信息部分-->
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="c-text">蓝星星，一个走在求职路上的应届生；一个想要找到合适工作的程序员一枚，将会分享自己的学习历程，
+                        希望结交到共同成长的小伙伴。</p>
+                    <p class="c-text">热爱编程，喜欢探索，不断学习着...</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic label left pointing">编程</div>
+                    <div class="ui orange basic label left pointing">写作</div>
+                    <div class="ui orange basic label left pointing">思考</div>
+                    <div class="ui orange basic label left pointing">运动</div>
+                    <div class="ui orange basic label left pointing">分享</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">java</div>
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">javaScript</div>
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">Spring</div>
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">Mysql</div>
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">MongoDB</div>
+                    <div class="ui blue basic label left pointing c-margin-tb-tiny">Vue</div>
+                </div>
+                <div class="ui botton attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="2868714995" data-position="bottom center"><i class="qq icon"></i></a>
+                </div>
+                <div class="ui wechatQR flowing popup top left transition hidden">
+                    <img src="../static/images/wechat.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!--底部-->
+<footer class="ui inverted vertical | segment c-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat.png" class="ui rounded image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header c-opacity-mini">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header c-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: 2868714995@qq.com</a>
+                    <a href="#" class="item">QQ: 2868714995</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header c-opacity-mini">博客介绍</h4>
+                <p class="c-text-thin c-text-spaced c-opacity-mini">这是我的个人博客，会分享编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="c-text-thin c-text-spaced c-opacity-tiny">Copyright © 2020-2021 Alisa Designed by Alisa</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.c-item').toggleClass('c-mobile-hide')
+        });
+        $('.qq').popup();
+        $('.wechat').popup({
+            popup : $('.wechatQR.popup'),
+            position : 'bottom center'
+        });
+    </script>
+</body>
+</html>

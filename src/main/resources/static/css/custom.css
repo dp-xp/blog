@@ -119,6 +119,12 @@ body{
     display: none !important;
 }
 
+/*---------shadow------------*/
+.c-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 @media screen and (max-width: 768px){
     .c-mobile-hide {
         display: none !important;
@@ -132,6 +138,10 @@ body{
     }
     .c-mobile-wide {
         width: 100%;
+    }
+    .c-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
