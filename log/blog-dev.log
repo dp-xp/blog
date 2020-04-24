@@ -1248,3 +1248,19 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'f
 2020-04-23 15:18:34.053  INFO 6428 --- [http-nio-8877-exec-4] fun.lanxing.blog.aspect.LogAspect        : Request: url='http://localhost:8877/', ip='0:0:0:0:0:0:0:1', className='fun.lanxing.blog.controller.IndexController.index', args=[]}
 2020-04-23 15:18:34.064  INFO 6428 --- [http-nio-8877-exec-4] fun.lanxing.blog.aspect.LogAspect        : --------------doAfter----------------
 2020-04-23 15:18:34.064  INFO 6428 --- [http-nio-8877-exec-4] fun.lanxing.blog.aspect.LogAspect        : Result:index
+2020-04-23 15:20:15.161  INFO 17000 --- [main] fun.lanxing.blog.BlogApplication         : Starting BlogApplication on LAPTOP-S2D9USL7 with PID 17000 (D:\study\blog\target\classes started by Alisa in D:\study\blog)
+2020-04-23 15:20:15.165 DEBUG 17000 --- [main] fun.lanxing.blog.BlogApplication         : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-23 15:20:15.165  INFO 17000 --- [main] fun.lanxing.blog.BlogApplication         : The following profiles are active: dev
+2020-04-23 15:20:16.099  WARN 17000 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[fun.lanxing.blog]' package. Please check your configuration.
+2020-04-23 15:20:16.625  INFO 17000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8877 (http)
+2020-04-23 15:20:16.637  INFO 17000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-23 15:20:16.638  INFO 17000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 15:20:16.745  INFO 17000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-23 15:20:16.746  INFO 17000 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1505 ms
+2020-04-23 15:20:17.243  INFO 17000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 15:20:17.346  INFO 17000 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-23 15:20:18.283  INFO 17000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8877 (http) with context path ''
+2020-04-23 15:20:18.287  INFO 17000 --- [main] fun.lanxing.blog.BlogApplication         : Started BlogApplication in 3.668 seconds (JVM running for 4.76)
+2020-04-23 15:20:26.102  INFO 17000 --- [http-nio-8877-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-23 15:20:26.103  INFO 17000 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-23 15:20:26.112  INFO 17000 --- [http-nio-8877-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
