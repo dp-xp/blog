@@ -42,6 +42,9 @@ body{
 .c-padded-small {
     padding: 0.3em!important;
 }
+.c-padded {
+    padding: 1em!important;
+}
 .c-padded-lr-responsive {
     padding-left: 3em;
     padding-right: 3em;
@@ -104,6 +107,16 @@ body{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.c-fixed {
+    position: fixed !important;
+    z-index: 1 !important;
+}
+
+.c-right-bottom {
+    bottom: 0!important;
+    right: 0 !important;
 }
 
 /*---------container----------*/
